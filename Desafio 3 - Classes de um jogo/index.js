@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-// Exibe os dados do personagem
 class Personagem {
     constructor(nome, idade, tipo) {
         this.nome = nome;
@@ -23,7 +20,7 @@ ataques() {
         ataque = "ataque de magia";
     } else if (this.tipo === "monge") {
         ataque = "Ataque físico";
-    } else if (this.tipo === "ninja") {
+    } else if (this.tipo === "inja") {
         ataque = "Ataque shuriken"
     } else {
         ataque = "Nenhum, não tem poderes";
@@ -39,7 +36,6 @@ ataques() {
    
 let heroi = new Personagem("Miguel", 2, "Mago");
 heroi.ataques();
->>>>>>> 5c0914e (FInalizado, classes de um jogo)
 
 const herois = [
     new Personagem("Miguel", 2, "mago"),
