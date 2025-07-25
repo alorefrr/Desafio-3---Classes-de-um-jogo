@@ -52,6 +52,3 @@ console.log("--- Ataques em grupo ---");
 for (const heroi of herois) {
     heroi.atacar();
 }
-    
-
-    
