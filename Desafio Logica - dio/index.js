@@ -1,29 +1,23 @@
-// calculadora de partidas rankeadas
-// desafio felipão - DIO
+let nome = "Espermatopower";
+let xp = 12095;
+let nivel = "";
 
-const vitoriasDoHeroi = 151;
-const derrotasDoHeroi = 54;
-const resultado = calcularPartidasRank(vitoriasDoHeroi, derrotasDoHeroi);
-
-function calcularPartidasRank(vitoriasDoHeroi, derrotasDoHeroi) {
-    const saldoVitorias = vitoriasDoHeroi - derrotasDoHeroi;
-    let nivel;
-    if (saldoVitorias < 10) {
-        nivel = 'Ferro';
-    } else if (vitorias <= 20) {
-        nivel = 'Bronze';
-    } else if (vitorias <= 50) {
-        nivel = 'Prata';
-    } else if (vitorias <= 80) {
-        nivel = 'Ouro';
-    } else if (vitorias <= 90) {
-        nivel = 'Diamante';
-    } else if (vitorias <= 100) {
-        nivel = 'Lendário';
-    } else {
-        nivel = 'Imortal';
-    }
-    return { saldoVitorias, nivel };
+if (xp < 1000) {
+    nivel = "Ferro";
+} else if (xp >= 1001 && xp <= 2000) {
+    nivel = "Bronze";
+} else if (xp >= 2001 && xp <= 5000) {
+    nivel = "Prata"; 
+}  else if (xp >= 5001 && xp <= 7000) {
+    nivel = "Ouro"; 
+} else if (xp >= 7001 && xp <= 8000) {
+    nivel = "Platina";
+} else if (xp >= 8001 && xp <= 9000) {
+    nivel = "Ascendente";
+} else if (xp >= 9001 && xp <= 10000) {
+    nivel = "imortal";
+} else if (xp >= 10001 ) {
+    nivel = "Radiante";
 }
 
-console.log('O Herói tem de saldo de ' + saldoVitorias + ' está no nível de ' + nivel)
+console.log('O herói de nome ' + nome + ' está no nível ' + nivel);
